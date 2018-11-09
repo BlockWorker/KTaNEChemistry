@@ -14,14 +14,6 @@ public class ModuleSettings {
 
     //Add your own settings here.  If you wish to have explanations, define them as strings similar to as shown above.
     //Make sure those strings are JSON compliant.
-    public bool ColorblindMode = false;
-    public string HowToUse1 = "Set to true to enable colo(u)rblind mode.";
-
-    public float morseTickTime = .25f;
-    public string HowToUse2 = "How long a morse time unit is, in seconds.";
-
-    public float binTickTime = .5f;
-    public string HowToUse3 = "How long each binary digit is shown on the LED, in seconds.";
 }
 
 public class ModSettings {
