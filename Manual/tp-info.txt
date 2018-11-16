@@ -1,0 +1,14 @@
+{
+    "Author": "BlockWorker",
+    "Compatibility": "Compatible",
+    "DefuserDifficulty": "Easy",
+    "Description": "Start the correct chemical reaction. Tags: chemistry, .",
+    "ExpertDifficulty": "Hard",
+    "ModuleID": "ChemicalReactions",
+    "Name": "Chemical Reactions",
+    "Origin": "Mods",
+    "SortKey": "CHEMICALREACTIONS",
+    "SteamID": "XXXXXX",
+    "TutorialVideoUrl": null,
+    "Type": "Regular"
+},

@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-        <title>Encrypted Morse — Keep Talking and Nobody Explodes Module</title>
+        <title>Chemical Reactions — Keep Talking and Nobody Explodes Module</title>
         <meta name="viewport" content="initial-scale=1">
         <link rel="stylesheet" type="text/css" href="css/normalize.css">
         <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -19,150 +19,184 @@
             <div class="page page-bg-01">
                 <div class="page-header">
                     <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
-                    <span class="page-header-section-title">Encrypted Morse</span>
+                    <span class="page-header-section-title">Chemical Reactions</span>
                 </div>
                 <div class="page-content">
-                    <img src="img/Component/Encrypted Morse.svg" class="diagram">
-                    <h2>On the Subject of Encrypted Morse</h2>
-                    <p class="flavour-text">Oh nice, a morse module! Wait, what does HNWLIREAKHI mean?</p>
+                    <img src="img/Component/Chemical Reactions.svg" class="diagram">
+                    <h2>On the Subject of Chemical Reactions</h2>
+                    <p class="flavour-text">Ok, now I just have to add... *BOOM*</p>
                     
-                    <p>
-                    <ul>
-                        <li>This module contains a <strong>morse light</strong> that transmits one of two things: The encrypted <strong>message</strong> (orange light) or the <strong>key</strong> (blue light).
-                            The defuser can choose which of these to receive using the knob next to the morse light.</li>
-                        <li>There is also a <strong>binary light</strong> that flashes a sequence of 42 binary digits (<strong>sequence A</strong>), red representing a zero and green representing a one.</li>
-                        <li>In colo(u)rblind mode, only the bottom half of the binary light will flash for a zero and only the top half will flash for a one.</li>
-                        <li>The defuser may at any time press the small reset button in the middle of the module to restart both transmissions from the beginning, as well as erase all inputted symbols.</li>
-                        <li>The wires leading to the lights may also be pressed to disable/enable the corresponding light.</li>
-                    </ul>
-                    </p>
                     
-                    <h3>Step 1: Generating sequence B</h3>
-                    <p>
-                    For every character of the serial number, generate a 7-digit binary number using the following rules, then concatenate them into a 42-digit binary string. That is <strong>sequence B</strong>.<br />
-                    <ul>
-                        <li>If the character is a digit, use its binary representation, extended to 7 digits. Example: 2 = 0000010 and 5 = 0000101.</li>
-                        <li>If the character is a vowel, use 1011001.</li>
-                        <li>Otherwise, if the character is positioned in the alphabet before the letter <strong>O</strong>, use 1100010.</li>
-                        <li>Otherwise, use 1000100.</li>
-                    </ul>
-                    If the total number of batteries on the bomb equals the total number of ports, reverse the first half of sequence B.
-                    </p>
-                    
-                    <h3>Step 2: Binary decryption</h3>
-                    <p>
-                    Treat the received morse message as a continuous sequence of morse symbols<br />(. or -), omitting any spaces between letters.<br />
-                    For every symbol in that sequence, let A be the binary digit from sequence A at the same position. B is the corresponding digit from sequence B.<br />
-                    Use that information with the following table to decrypt the symbol. "Space" refers to a space between morse letters.
-                    </p>
                 </div>
                 <div class="page-footer relative-footer">Page 1 of 3</div>
             </div>
             <div class="page page-bg-02">
                 <div class="page-header">
                     <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
-                    <span class="page-header-section-title">Encrypted Morse</span>
+                    <span class="page-header-section-title">Chemical Reactions</span>
                 </div>
                 <div class="page-content">
-                    <table>
-                        <tr>
-                            <th colspan="2" style="border-right: 3px solid black">Binary digits</th>
-                            <th colspan="2">Received symbol</th>
-                        </tr>
-                        <tr style="border-bottom: 3px solid black">
-                            <th>A</th>
-                            <th style="border-right: 3px solid black">B</th>
-                            <th>.</th>
-                            <th>-</th>
-                        </tr>
-                        <tr>
-                            <th>0</th>
-                            <th style="border-right: 3px solid black">0</th>
-                            <td>Space</td>
-                            <td>-</td>
-                        </tr>
-                        <tr>
-                            <th>0</th>
-                            <th style="border-right: 3px solid black">1</th>
-                            <td>-</td>
-                            <td>.</td>
-                        </tr>
-                        <tr>
-                            <th>1</th>
-                            <th style="border-right: 3px solid black">0</th>
-                            <td>.</td>
-                            <td>-</td>
-                        </tr>
-                        <tr>
-                            <th>1</th>
-                            <th style="border-right: 3px solid black">1</th>
-                            <td>.</td>
-                            <td>Space</td>
-                        </tr>
-                    </table>
-                    Parse the decrypted morse message to get your intermediate result.
-
-                    <h3>Step 3: Alphabetic decryption</h3>
-                    <p>
-                    For every letter in your intermediate result:
-                    <ul>
-                        <li>Take the letter from the received key at the same position.</li>
-                        <li>Add the alphabetic positions of your message letter to the alphabetic position of the key letter (A=1, Z=26).</li>
-                        <li>If the result is greater than 26, subtract 26.</li>
-                        <li>Convert the result to the letter at that alphabetic position.</li>
-                    </ul>
-                    You now have the fully decrypted message.
-                    </p>
                     
-                    <h3>Step 4: Response</h3>
-                    <p>
-                    Find the correct response to send in the following table. Note that spaces and punctuation are added for readability, they are irrelevant in both message and response.
-                    <table>
-                        <tr>
-                            <th>Message</th>
-                            <th style="border-right: 5px solid black">Response</th>
-                            <th>Message</th>
-                            <th>Response</th>
-                        </tr>
-                        <tr>
-                            <td>"DETONATE"</td>
-                            <td style="border-right: 5px solid black">"PLEASE NO"</td>
-                            <td>"REMEMBER"</td>
-                            <td>"SOUVENIR"</td>
-                        </tr>
-                        <tr>
-                            <td>"READY NOW"</td>
-                            <td style="border-right: 5px solid black">"CHEESECAKE"</td>
-                            <td>"GREAT JOB"</td>
-                            <td>"THANK YOU"</td>
-                        </tr>
-                        <tr>
-                            <td>"WE'RE DEAD"</td>
-                            <td style="border-right: 5px solid black">"SADFACE"</td>
-                            <td>"SOLO THIS"</td>
-                            <td>"I DARE YOU"</td>
-                        </tr>
-                        <tr>
-                            <td>"SHE SELLS"</td>
-                            <td style="border-right: 5px solid black">"SEA SHELLS"</td>
-                            <td>Any other</td>
-                            <td>"EXCUSE ME"</td>
-                        </tr>
-                    </table>
-                    To defuse the module, convert the correct response to morse code and use the two large buttons on the module to transmit it. Spaces between words and letters are not required.
-                    Transmitting a wrong morse symbol at any time will cause a strike and you will have to restart the transmission from the beginning.
-                    </p>
                 </div>
                 <div class="page-footer relative-footer">Page 2 of 3</div>
             </div>
             <div class="page page-bg-03">
                 <div class="page-header">
                     <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
-                    <span class="page-header-section-title">Encrypted Morse</span>
+                    <span class="page-header-section-title">Chemical Reactions</span>
                 </div>
-                <div class="page-content">
-                    <h3>Appendix A: Morse Code</h3>
-                    <img src="img/International_Morse_Code.svg" />
+                <div class="page-content" style="text-indent: 0px">
+                    <h3>Appendix A: Periodic Table of Elements</h3>
+                    <table style="border: none; line-height: 90%; margin-left: -5%">
+                        <tr>
+                            <td align="center"><font size="-2">1</font><br />H<br /><font size="-2">1.01</font></td>
+                            <td colspan="16" style="border: none"></td>
+                            <td align="center"><font size="-2">2</font><br />He<br /><font size="-2">4.00</font></td>
+                        </tr>
+                        <tr>
+                            <td align="center"><font size="-2">3</font><br />Li<br /><font size="-2">6.94</font></td>
+                            <td align="center"><font size="-2">4</font><br />Be<br /><font size="-2">9.01</font></td>
+                            <td colspan="10" style="border: none"></td>
+                            <td align="center"><font size="-2">5</font><br />B<br /><font size="-2">10.8</font></td>
+                            <td align="center"><font size="-2">6</font><br />C<br /><font size="-2">12.0</font></td>
+                            <td align="center"><font size="-2">7</font><br />N<br /><font size="-2">14.0</font></td>
+                            <td align="center"><font size="-2">8</font><br />O<br /><font size="-2">16.0</font></td>
+                            <td align="center"><font size="-2">9</font><br />F<br /><font size="-2">19.0</font></td>
+                            <td align="center"><font size="-2">10</font><br />Ne<br /><font size="-2">20.2</font></td>
+                        </tr>
+                        <tr>
+                            <td align="center"><font size="-2">11</font><br />Na<br /><font size="-2">23.0</font></td>
+                            <td align="center"><font size="-2">12</font><br />Mg<br /><font size="-2">24.3</font></td>
+                            <td colspan="10" style="border: none"></td>
+                            <td align="center"><font size="-2">13</font><br />Al<br /><font size="-2">27.0</font></td>
+                            <td align="center"><font size="-2">14</font><br />Si<br /><font size="-2">28.1</font></td>
+                            <td align="center"><font size="-2">15</font><br />P<br /><font size="-2">31.0</font></td>
+                            <td align="center"><font size="-2">16</font><br />S<br /><font size="-2">32.1</font></td>
+                            <td align="center"><font size="-2">17</font><br />Cl<br /><font size="-2">35.5</font></td>
+                            <td align="center"><font size="-2">18</font><br />Ar<br /><font size="-2">39.9</font></td>
+                        </tr>
+                        <tr>
+                            <td align="center"><font size="-2">19</font><br />K<br /><font size="-2">39.1</font></td>
+                            <td align="center"><font size="-2">20</font><br />Ca<br /><font size="-2">40.1</font></td>
+                            <td align="center"><font size="-2">21</font><br />Sc<br /><font size="-2">45.0</font></td>
+                            <td align="center"><font size="-2">22</font><br />Ti<br /><font size="-2">47.9</font></td>
+                            <td align="center"><font size="-2">23</font><br />V<br /><font size="-2">51.0</font></td>
+                            <td align="center"><font size="-2">24</font><br />Cr<br /><font size="-2">52.0</font></td>
+                            <td align="center"><font size="-2">25</font><br />Mn<br /><font size="-2">54.9</font></td>
+                            <td align="center"><font size="-2">26</font><br />Fe<br /><font size="-2">55.8</font></td>
+                            <td align="center"><font size="-2">27</font><br />Co<br /><font size="-2">58.9</font></td>
+                            <td align="center"><font size="-2">28</font><br />Ni<br /><font size="-2">58.7</font></td>
+                            <td align="center"><font size="-2">29</font><br />Cu<br /><font size="-2">63.5</font></td>
+                            <td align="center"><font size="-2">30</font><br />Zn<br /><font size="-2">65.4</font></td>
+                            <td align="center"><font size="-2">31</font><br />Ga<br /><font size="-2">69.7</font></td>
+                            <td align="center"><font size="-2">32</font><br />Ge<br /><font size="-2">72.6</font></td>
+                            <td align="center"><font size="-2">33</font><br />As<br /><font size="-2">74.9</font></td>
+                            <td align="center"><font size="-2">34</font><br />Se<br /><font size="-2">79.0</font></td>
+                            <td align="center"><font size="-2">35</font><br />Br<br /><font size="-2">79.9</font></td>
+                            <td align="center"><font size="-2">36</font><br />Kr<br /><font size="-2">83.8</font></td>
+                        </tr>
+                        <tr>
+                            <td align="center"><font size="-2">37</font><br />Rb<br /><font size="-2">85.5</font></td>
+                            <td align="center"><font size="-2">38</font><br />Sr<br /><font size="-2">87.6</font></td>
+                            <td align="center"><font size="-2">39</font><br />Y<br /><font size="-2">88.9</font></td>
+                            <td align="center"><font size="-2">40</font><br />Zr<br /><font size="-2">91.2</font></td>
+                            <td align="center"><font size="-2">41</font><br />Nb<br /><font size="-2">92.9</font></td>
+                            <td align="center"><font size="-2">42</font><br />Mo<br /><font size="-2">96.0</font></td>
+                            <td align="center"><font size="-2">43</font><br />Tc<br /><font size="-2">98.0</font></td>
+                            <td align="center"><font size="-2">44</font><br />Ru<br /><font size="-2">101</font></td>
+                            <td align="center"><font size="-2">45</font><br />Rh<br /><font size="-2">103</font></td>
+                            <td align="center"><font size="-2">46</font><br />Pd<br /><font size="-2">106</font></td>
+                            <td align="center"><font size="-2">47</font><br />Ag<br /><font size="-2">108</font></td>
+                            <td align="center"><font size="-2">48</font><br />Cd<br /><font size="-2">112</font></td>
+                            <td align="center"><font size="-2">49</font><br />In<br /><font size="-2">115</font></td>
+                            <td align="center"><font size="-2">50</font><br />Sn<br /><font size="-2">119</font></td>
+                            <td align="center"><font size="-2">51</font><br />Sb<br /><font size="-2">122</font></td>
+                            <td align="center"><font size="-2">52</font><br />Te<br /><font size="-2">128</font></td>
+                            <td align="center"><font size="-2">53</font><br />I<br /><font size="-2">127</font></td>
+                            <td align="center"><font size="-2">54</font><br />Xe<br /><font size="-2">131</font></td>
+                        </tr>
+                        <tr>
+                            <td align="center"><font size="-2">55</font><br />Cs<br /><font size="-2">133</font></td>
+                            <td align="center"><font size="-2">56</font><br />Ba<br /><font size="-2">137</font></td>
+                            <td align="center">(La)<br />▼</td>
+                            <td align="center"><font size="-2">72</font><br />Hf<br /><font size="-2">178</font></td>
+                            <td align="center"><font size="-2">73</font><br />Ta<br /><font size="-2">181</font></td>
+                            <td align="center"><font size="-2">74</font><br />W<br /><font size="-2">184</font></td>
+                            <td align="center"><font size="-2">75</font><br />Re<br /><font size="-2">186</font></td>
+                            <td align="center"><font size="-2">76</font><br />Os<br /><font size="-2">190</font></td>
+                            <td align="center"><font size="-2">77</font><br />Ir<br /><font size="-2">192</font></td>
+                            <td align="center"><font size="-2">78</font><br />Pt<br /><font size="-2">195</font></td>
+                            <td align="center"><font size="-2">79</font><br />Au<br /><font size="-2">197</font></td>
+                            <td align="center"><font size="-2">80</font><br />Hg<br /><font size="-2">201</font></td>
+                            <td align="center"><font size="-2">81</font><br />Tl<br /><font size="-2">204</font></td>
+                            <td align="center"><font size="-2">82</font><br />Pb<br /><font size="-2">207</font></td>
+                            <td align="center"><font size="-2">83</font><br />Bi<br /><font size="-2">209</font></td>
+                            <td align="center"><font size="-2">84</font><br />Po<br /><font size="-2">209</font></td>
+                            <td align="center"><font size="-2">85</font><br />At<br /><font size="-2">210</font></td>
+                            <td align="center"><font size="-2">86</font><br />Rn<br /><font size="-2">222</font></td>
+                        </tr>
+                        <tr>
+                            <td align="center"><font size="-2">87</font><br />Fr<br /><font size="-2">223</font></td>
+                            <td align="center"><font size="-2">88</font><br />Ra<br /><font size="-2">226</font></td>
+                            <td align="center">(Ac)<br />▼</td>
+                            <td align="center"><font size="-2">104</font><br />Rf<br /><font size="-2">267</font></td>
+                            <td align="center"><font size="-2">105</font><br />Db<br /><font size="-2">268</font></td>
+                            <td align="center"><font size="-2">106</font><br />Sg<br /><font size="-2">269</font></td>
+                            <td align="center"><font size="-2">107</font><br />Bh<br /><font size="-2">270</font></td>
+                            <td align="center"><font size="-2">108</font><br />Hs<br /><font size="-2">277</font></td>
+                            <td align="center"><font size="-2">109</font><br />Mt<br /><font size="-2">278</font></td>
+                            <td align="center"><font size="-2">110</font><br />Ds<br /><font size="-2">281</font></td>
+                            <td align="center"><font size="-2">111</font><br />Rg<br /><font size="-2">282</font></td>
+                            <td align="center"><font size="-2">112</font><br />Cn<br /><font size="-2">285</font></td>
+                            <td align="center"><font size="-2">113</font><br />Nh<br /><font size="-2">286</font></td>
+                            <td align="center"><font size="-2">114</font><br />Fl<br /><font size="-2">289</font></td>
+                            <td align="center"><font size="-2">115</font><br />Mc<br /><font size="-2">290</font></td>
+                            <td align="center"><font size="-2">116</font><br />Lv<br /><font size="-2">293</font></td>
+                            <td align="center"><font size="-2">117</font><br />Ts<br /><font size="-2">294</font></td>
+                            <td align="center"><font size="-2">118</font><br />Og<br /><font size="-2">294</font></td>
+                        </tr>
+                        <tr>
+                            <td colspan="18" style="border: none"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="border: none"></td>
+                            <td align="center">(La)<br />►</td>
+                            <td align="center"><font size="-2">57</font><br />La<br /><font size="-2">139</font></td>
+                            <td align="center"><font size="-2">58</font><br />Ce<br /><font size="-2">140</font></td>
+                            <td align="center"><font size="-2">59</font><br />Pr<br /><font size="-2">141</font></td>
+                            <td align="center"><font size="-2">60</font><br />Nd<br /><font size="-2">144</font></td>
+                            <td align="center"><font size="-2">61</font><br />Pm<br /><font size="-2">145</font></td>
+                            <td align="center"><font size="-2">62</font><br />Sm<br /><font size="-2">150</font></td>
+                            <td align="center"><font size="-2">63</font><br />Eu<br /><font size="-2">152</font></td>
+                            <td align="center"><font size="-2">64</font><br />Gd<br /><font size="-2">157</font></td>
+                            <td align="center"><font size="-2">65</font><br />Tb<br /><font size="-2">159</font></td>
+                            <td align="center"><font size="-2">66</font><br />Dy<br /><font size="-2">163</font></td>
+                            <td align="center"><font size="-2">67</font><br />Ho<br /><font size="-2">165</font></td>
+                            <td align="center"><font size="-2">68</font><br />Er<br /><font size="-2">167</font></td>
+                            <td align="center"><font size="-2">69</font><br />Tm<br /><font size="-2">169</font></td>
+                            <td align="center"><font size="-2">70</font><br />Yb<br /><font size="-2">173</font></td>
+                            <td align="center"><font size="-2">71</font><br />Lu<br /><font size="-2">175</font></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="border: none"></td>
+                            <td align="center">(Ac)<br />►</td>
+                            <td align="center"><font size="-2">89</font><br />Ac<br /><font size="-2">227</font></td>
+                            <td align="center"><font size="-2">90</font><br />Th<br /><font size="-2">232</font></td>
+                            <td align="center"><font size="-2">91</font><br />Pa<br /><font size="-2">231</font></td>
+                            <td align="center"><font size="-2">92</font><br />U<br /><font size="-2">238</font></td>
+                            <td align="center"><font size="-2">93</font><br />Np<br /><font size="-2">237</font></td>
+                            <td align="center"><font size="-2">94</font><br />Pu<br /><font size="-2">244</font></td>
+                            <td align="center"><font size="-2">95</font><br />Am<br /><font size="-2">243</font></td>
+                            <td align="center"><font size="-2">96</font><br />Cm<br /><font size="-2">247</font></td>
+                            <td align="center"><font size="-2">97</font><br />Bk<br /><font size="-2">247</font></td>
+                            <td align="center"><font size="-2">98</font><br />Cf<br /><font size="-2">251</font></td>
+                            <td align="center"><font size="-2">99</font><br />Es<br /><font size="-2">252</font></td>
+                            <td align="center"><font size="-2">100</font><br />Fm<br /><font size="-2">257</font></td>
+                            <td align="center"><font size="-2">101</font><br />Md<br /><font size="-2">258</font></td>
+                            <td align="center"><font size="-2">102</font><br />No<br /><font size="-2">259</font></td>
+                            <td align="center"><font size="-2">103</font><br />Lr<br /><font size="-2">266</font></td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="page-footer relative-footer">Page 3 of 3</div>
             </div>
