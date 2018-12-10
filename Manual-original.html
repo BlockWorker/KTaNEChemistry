@@ -25,6 +25,10 @@
                 margin-top: 0.2em;
                 margin-bottom: 0.2em;
             }
+            
+            .formula {
+                font-family:Consolas;
+            }
         </style>
     </head>
     <body>
@@ -50,10 +54,7 @@
                                 </ul>
                             </li>
                             <li>Two buttons to switch between the addition consoles, labeled with the corresponding colors</li>
-                            <li>
-                                A <strong>reset button</strong> on the right of the magnetic stirrer
-                                <ul><li>Press at any time to discard vessel contents</li></ul>
-                            </li>
+                            <li>A <strong>reset button</strong> on the right of the magnetic stirrer</li>
                             <li>And a <strong>colored letter display</strong> on the left of the magnetic stirrer.</li>
                         </ul>
                     </p>
@@ -70,57 +71,57 @@
                             </tr>
                             <tr>
                                 <td>1</td>
-                                <td>C<sub>6</sub>H<sub>3</sub>(COOH)<sub>2</sub>NO<sub>2</sub> + H<sub>2</sub>NNH<sub>2</sub> + Na<sub>2</sub>S<sub>2</sub>O<sub>4</sub></td>
+                                <td class="formula">C₆H₃(COOH)₂NO₂ + H₂NNH₂ + Na₂S₂O₄</td>
                                 <td>Luminol</td>
                                 <td>Propane-1,2,3-triol</td>
                             </tr>
                             <tr>
                                 <td>2</td>
-                                <td>C<sub>3</sub>H<sub>5</sub>(OH)<sub>3</sub> + 3 HNO<sub>3</sub> + 3 H<sub>2</sub>SO<sub>4</sub></td>
+                                <td class="formula">C₃H₅(OH)₃ + 3 HNO₃ + 3 H₂SO₄</td>
                                 <td>Nitroglycerin</td>
                                 <td>None</td>
                             </tr>
                             <tr>
                                 <td>3</td>
-                                <td>C<sub>6</sub>H<sub>4</sub>(CO)<sub>2</sub>O + 2 C<sub>6</sub>H<sub>5</sub>OH + H<sub>2</sub>SO<sub>4</sub></td>
+                                <td class="formula">C₆H₄(CO)₂O + 2 C₆H₅OH + H₂SO₄</td>
                                 <td>Phenolphthalein</td>
                                 <td>Water</td>
                             </tr>
                             <tr>
                                 <td>4</td>
-                                <td>C<sub>6</sub>H<sub>4</sub>(NH<sub>2</sub>)(COOH) + HCl +<br/>NaNO<sub>2</sub> + C<sub>6</sub>H<sub>5</sub>N(CH<sub>3</sub>)<sub>2</sub></td>
+                                <td class="formula">C₆H₄(NH₂)(COOH) + HCl +<br/>NaNO₂ + C₆H₅N(CH₃)₂</td>
                                 <td>Methyl red</td>
                                 <td>Ethanol</td>
                             </tr>
                             <tr>
                                 <td>5</td>
-                                <td>U<sub>3</sub>O<sub>8</sub> + 6 NH<sub>3</sub> + 15 H<sub>2</sub> + 12 HF +<br/>3 F<sub>2</sub></td>
+                                <td class="formula">U₃O₈ + 6 NH₃ + 15 H₂ + 12 HF +<br/>3 F₂</td>
                                 <td>3 Uranium hexafluoride</td>
                                 <td>Nitric acid</td>
                             </tr>
                             <tr>
                                 <td>6</td>
-                                <td>C<sub>6</sub>H<sub>4</sub>(OH)COOH + (CH<sub>3</sub>CO)<sub>2</sub>O</td>
+                                <td class="formula">C₆H₄(OH)COOH + (CH₃CO)₂O</td>
                                 <td>Aspirin</td>
                                 <td>Sulfuric acid</td>
                             </tr>
                             <tr>
                                 <td>7</td>
-                                <td>C<sub>6</sub>H<sub>2</sub>Cl<sub>3</sub>OH + (COCl)<sub>2</sub> + N(CH<sub>2</sub>CH<sub>3</sub>)<sub>3</sub></td>
+                                <td class="formula">C₆H₂Cl₃OH + (COCl)₂ + N(CH₂CH₃)₃</td>
                                 <td>TCPO</td>
                                 <td>Toluene</td>
                             </tr>
                             <tr>
                                 <td>8</td>
-                                <td>KIO<sub>3</sub> + 2 H<sub>2</sub>O<sub>2</sub> + CH<sub>2</sub>(COOH)<sub>2</sub> +<br/>MnCl<sub>2</sub></td>
+                                <td class="formula">KIO₃ + 2 H₂O₂ + CH₂(COOH)₂ +<br/>MnCl₂</td>
                                 <td>None*</td>
                                 <td>Sulfuric acid</td>
                             </tr>
                         </table>
-                        * The "Briggs-Rauscher reaction" is cyclical and has no real products. When a product is required for calculation, use potassium iodate.
+                        * This cyclical reaction has no real products. When a product is required for calculation, use potassium iodate.
                     </p>
                     <p>
-                        If the reaction requires a solvent, <em>add exactly 100ml of the solvent before any other reagents.</em> Doing otherwise will cause a strike.
+                        If the reaction requires a solvent, start by adding 100ml of the solvent.
                     </p>
                 </div>
                 <div class="page-footer relative-footer">Page 1 of 4</div>
@@ -134,7 +135,7 @@
                     <p style="margin-top: -2.5em">
                         <h3>Determining product mass</h3>
                         Start with the value given by the color of the displayed letter:
-                        <table style="margin: 0%; margin-bottom: 1%">
+                        <table style="margin: 1%; margin-left: 0%; margin-right: 0%">
                             <tr>
                                 <th>Red</th>
                                 <th>Blue</th>
@@ -166,10 +167,10 @@
                         </ul>
                         This number is the mass of the product that you should produce, in g.
                     </p>
-                    <p style="margin-top: -0.9em">
+                    <p style="margin-top: -0.8em">
                         <h3>Calculating reagent amounts</h3>
                         First, calculate the <a href="#calcmm">molar mass</a> of your product. Divide your product mass by this molar mass.
-                        If the product has a factor in front of it in the reaction table, also divide by that factor. Round<sup><em><a href="#round">[1]</a></em></sup> to 3 digits after the decimal point.
+                        If the product has a factor in front of it in the reaction table, also divide by that factor.
                         This result is your <em>base reagent amount</em>, in mol.<br/>
                         Now, for each reagent in your given reaction:
                         <table style="margin: 1%; margin-left: -4%; margin-right: -5%">
@@ -207,15 +208,15 @@
                                 </td>
                             </tr>
                         </table>
-                        Round<sup><em><a href="#round">[1]</a></em></sup> all resulting amounts to 3 digits after the decimal point.<br/>
                         Add the correct amounts of all reagents listed in the reaction, in any order.<br/>The module will list all reagents <em>either by chemical formula or by name</em>.<br/>
                         Adding a reagent that is not part of the given reaction will cause a strike.<br/>
                         <em>Note 1:</em> It is always allowed to add a zero amount of any reagent. This is equivalent to cancelling the input.<br/>
-                        <em>Note 2:</em> If more than six digits are entered for the amount, the most significant digit will be discarded, e.g. inputting six zeroes will reset the amount to zero.
+                        <em>Note 2:</em> If more than six digits are entered for the amount, the most significant digit will be discarded. That means inputting six zeroes will reset the amount to zero.
                     </p>
                     <p style="margin-top: -0.7em">
                         Press the switch on the magnetic stirrer to start the reaction.<br/>
-                        If not all reagents were added or any reagent amount was incorrect, a strike will be issued and the vessel will be emptied.
+                        If not all reagents were added or any reagent amount was incorrect, a strike will be issued and the vessel will be emptied.<br/>
+                        You may also press the reset button at any time to empty the vessel.
                     </p>
                 </div>
                 <div class="page-footer relative-footer">Page 2 of 4</div>
@@ -226,22 +227,22 @@
                     <span class="page-header-section-title">Chemical Reactions</span>
                 </div>
                 <div class="page-content">
-                    <p style="margin-top: -2.5em">
+                    <p>
                         <h3 style="margin-bottom: -1em">Calculating molar mass and volume</h3>
                         <h4 id="calcmm">Molar mass (for solids and liquids):</h4>
-                        For each element that appears in the compound's chemical formula, count how many times it appears. Note that, for example, <span>(CH<sub>3</sub>)<sub>2</sub></span> means
-                        "2 instances of <span>CH<sub>3</sub></span>", so 2 carbon and 6 hydrogen atoms in total.<br/>
+                        For each element that appears in the compound's chemical formula, count how many times it appears. Note that, for example, <span class="formula">(CH₃)₂</span> means
+                        "2 instances of <span class="formula">CH₃</span>", so 2 carbon and 6 hydrogen atoms in total.<br/>
                         Multiply each element's count with the atomic weight of that element (bottom number in the periodic table, see appendix A).
                         Then add them all together to get the molar mass of your compound, in g/mol.<br/>
                         Note: Keep all decimal digits during this calculation, do not round your numbers.
                         <h4 style="margin-top: 0.2em" id="calcmv">Molar volume for liquids:</h4>
-                        Divide the molar mass of the compound by the density of the liquid (see compound table below). Round<sup><em><a href="#round">[1]</a></em></sup> the result to 3 digits after the decimal point. This is the liquid's molar volume, in ml/mol.
+                        Divide the molar mass of the compound by the density of the liquid (see compound table below). Round the result to 3 digits after the decimal point. This is the liquid's molar volume, in ml/mol.
                         <h4 style="margin-top: 0.2em" id="stdmv">Molar volume for gases:</h4>
                         Gases all have the same standard molar volume of 24.5 l/mol.
                     </p>
                     <p>
                         <h3>Chemical compounds</h3>
-                        <table class="splitcol" style="font-size: 83%; line-height: 100%; margin-left: -7%; margin-right: -7%; background-color: white">
+                        <table class="splitcol" style="font-size: 80%; line-height: 100%; margin-left: -7%; margin-right: -7%; background-color: white">
                             <tr>
                                 <th>Name</th>
                                 <th>Formula</th>
@@ -254,181 +255,181 @@
                             </tr>
                             <tr>
                                 <td>Benzene-3-nitro-1,2-dicarboxylic acid</td>
-                                <td>C<sub>6</sub>H<sub>3</sub>(COOH)<sub>2</sub>NO<sub>2</sub></td>
+                                <td class="formula">C₆H₃(COOH)₂NO₂</td>
                                 <td>solid</td>
                                 <td>-</td>
                                 <td>Hydrazine</td>
-                                <td>H<sub>2</sub>NNH<sub>2</sub></td>
+                                <td class="formula">H₂NNH₂</td>
                                 <td>liquid</td>
                                 <td>1.02</td>
                             </tr>
                             <tr>
                                 <td>Luminol</td>
-                                <td>C<sub>6</sub>H<sub>3</sub>(CONH)<sub>2</sub>(NH<sub>2</sub>)</td>
+                                <td class="formula">C₆H₃(CONH)₂(NH₂)</td>
                                 <td>-</td>
                                 <td>-</td>
                                 <td>Sodium dithionite</td>
-                                <td>Na<sub>2</sub>S<sub>2</sub>O<sub>4</sub></td>
+                                <td class="formula">Na₂S₂O₄</td>
                                 <td>solid</td>
                                 <td>-</td>
                             </tr>
                             <tr>
                                 <td>Propane-1,2,3-triol</td>
-                                <td>C<sub>3</sub>H<sub>5</sub>(OH)<sub>3</sub></td>
+                                <td class="formula">C₃H₅(OH)₃</td>
                                 <td>liquid</td>
                                 <td>1.26</td>
                                 <td>Nitric acid</td>
-                                <td>HNO<sub>3</sub></td>
+                                <td class="formula">HNO₃</td>
                                 <td>liquid</td>
                                 <td>1.51</td>
                             </tr>
                             <tr>
                                 <td>2-Benzofuran-<br/>1,3-dione</td>
-                                <td>C<sub>6</sub>H<sub>4</sub>(CO)<sub>2</sub>O</td>
+                                <td class="formula">C₆H₄(CO)₂O</td>
                                 <td>solid</td>
                                 <td>-</td>
                                 <td>Water</td>
-                                <td>H<sub>2</sub>O</td>
+                                <td class="formula">H₂O</td>
                                 <td>liquid</td>
                                 <td>1.00</td>
                             </tr>
                             <tr>
                                 <td>Nitroglycerin</td>
-                                <td>C<sub>3</sub>H<sub>5</sub>(ONO<sub>2</sub>)<sub>3</sub></td>
+                                <td class="formula">C₃H₅(ONO₂)₃</td>
                                 <td>-</td>
                                 <td>-</td>
                                 <td>Sulfuric acid</td>
-                                <td>H<sub>2</sub>SO<sub>4</sub></td>
+                                <td class="formula">H₂SO₄</td>
                                 <td>liquid</td>
                                 <td>1.83</td>
                             </tr>
                             <tr>
                                 <td>Phenolphthalein</td>
-                                <td>C<sub>6</sub>H<sub>4</sub>(CO)C(C<sub>6</sub>H<sub>4</sub>OH)<sub>2</sub>O</td>
+                                <td class="formula">C₆H₄(CO)C(C₆H₄OH)₂O</td>
                                 <td>-</td>
                                 <td>-</td>
                                 <td>Phenol</td>
-                                <td>C<sub>6</sub>H<sub>5</sub>OH</td>
-                                <td>solid</td>
-                                <td>-</td>
+                                <td class="formula">C₆H₅OH</td>
+                                <td>liquid</td>
+                                <td>1.07</td>
                             </tr>
                             <tr>
                                 <td>2-Aminobenzoic acid</td>
-                                <td>C<sub>6</sub>H<sub>4</sub>(NH<sub>2</sub>)(COOH)</td>
+                                <td class="formula">C₆H₄(NH₂)(COOH)</td>
                                 <td>solid</td>
                                 <td>-</td>
                                 <td>Hydrogen chloride</td>
-                                <td>HCl</td>
+                                <td class="formula">HCl</td>
                                 <td>gas</td>
                                 <td>-</td>
                             </tr>
                             <tr>
                                 <td>Dimethylaniline</td>
-                                <td>C<sub>6</sub>H<sub>5</sub>N(CH<sub>3</sub>)<sub>2</sub></td>
+                                <td class="formula">C₆H₅N(CH₃)₂</td>
                                 <td>liquid</td>
                                 <td>0.96</td>
                                 <td>Sodium nitrite</td>
-                                <td>NaNO<sub>2</sub></td>
+                                <td class="formula">NaNO₂</td>
                                 <td>solid</td>
                                 <td>-</td>
                             </tr>
                             <tr>
                                 <td>Ethanol</td>
-                                <td>C<sub>2</sub>H<sub>5</sub>OH</td>
+                                <td class="formula">C₂H₅OH</td>
                                 <td>liquid</td>
                                 <td>0.79</td>
                                 <td>Urania</td>
-                                <td>U<sub>3</sub>O<sub>8</sub></td>
+                                <td class="formula">U₃O₈</td>
                                 <td>solid</td>
                                 <td>-</td>
                             </tr>
                             <tr>
                                 <td>Methyl red</td>
-                                <td>C<sub>6</sub>H<sub>4</sub>(COOH)(N<sub>2</sub>)C<sub>6</sub>H<sub>4</sub>N(CH<sub>3</sub>)<sub>2</sub></td>
+                                <td class="formula">C₆H₄(COOH)(N₂)C₆H₄N(CH₃)₂</td>
                                 <td>-</td>
                                 <td>-</td>
                                 <td>Ammonia</td>
-                                <td>NH<sub>3</sub></td>
+                                <td class="formula">NH₃</td>
                                 <td>gas</td>
                                 <td>-</td>
                             </tr>
                             <tr>
                                 <td>2-Hydroxybenzoic acid</td>
-                                <td>C<sub>6</sub>H<sub>4</sub>(OH)COOH</td>
+                                <td class="formula">C₆H₄(OH)COOH</td>
                                 <td>solid</td>
                                 <td>-</td>
                                 <td>Hydrogen</td>
-                                <td>H<sub>2</sub></td>
+                                <td class="formula">H₂</td>
                                 <td>gas</td>
                                 <td>-</td>
                             </tr>
                             <tr>
                                 <td>Acetic anhydride</td>
-                                <td>(CH<sub>3</sub>CO)<sub>2</sub>O</td>
+                                <td class="formula">(CH₃CO)₂O</td>
                                 <td>liquid</td>
                                 <td>1.08</td>
                                 <td>Hydrogen fluoride</td>
-                                <td>HF</td>
+                                <td class="formula">HF</td>
                                 <td>gas</td>
                                 <td>-</td>
                             </tr>
                             <tr>
                                 <td>Aspirin</td>
-                                <td>C<sub>6</sub>H<sub>4</sub>(CH<sub>3</sub>CO)(COOH)O</td>
+                                <td class="formula">C₆H₄(CH₃CO)(COOH)O</td>
                                 <td>-</td>
                                 <td>-</td>
                                 <td>Fluorine</td>
-                                <td>F<sub>2</sub></td>
+                                <td class="formula">F₂</td>
                                 <td>gas</td>
                                 <td>-</td>
                             </tr>
                             <tr>
                                 <td>2,4,6-Trichlorophenol</td>
-                                <td>C<sub>6</sub>H<sub>2</sub>Cl<sub>3</sub>OH</td>
+                                <td class="formula">C₆H₂Cl₃OH</td>
                                 <td>solid</td>
                                 <td>-</td>
                                 <td>Uranium hexafluoride</td>
-                                <td>UF<sub>6</sub></td>
+                                <td class="formula">UF₆</td>
                                 <td>-</td>
                                 <td>-</td>
                             </tr>
                             <tr>
                                 <td>Triethylamine</td>
-                                <td>N(CH<sub>2</sub>CH<sub>3</sub>)<sub>3</sub></td>
+                                <td class="formula">N(CH₂CH₃)₃</td>
                                 <td>liquid</td>
                                 <td>0.73</td>
                                 <td>Oxalyl dichloride</td>
-                                <td>(COCl)<sub>2</sub></td>
+                                <td class="formula">(COCl)₂</td>
                                 <td>liquid</td>
                                 <td>1.48</td>
                             </tr>
                             <tr>
                                 <td>Toluene</td>
-                                <td>C<sub>6</sub>H<sub>5</sub>CH<sub>3</sub></td>
+                                <td class="formula">C₆H₅CH₃</td>
                                 <td>liquid</td>
                                 <td>0.87</td>
                                 <td>Potassium iodate</td>
-                                <td>KIO<sub>3</sub></td>
+                                <td class="formula">KIO₃</td>
                                 <td>solid</td>
                                 <td>-</td>
                             </tr>
                             <tr>
                                 <td>TCPO</td>
-                                <td>(COOC<sub>6</sub>H<sub>2</sub>Cl<sub>3</sub>)<sub>2</sub></td>
+                                <td class="formula">(COOC₆H₂Cl₃)₂</td>
                                 <td>-</td>
                                 <td>-</td>
                                 <td>Hydrogen peroxide</td>
-                                <td>H<sub>2</sub>O<sub>2</sub></td>
+                                <td class="formula">H₂O₂</td>
                                 <td>liquid</td>
                                 <td>1.45</td>
                             </tr>
                             <tr>
                                 <td>Propanedioic acid</td>
-                                <td>CH<sub>2</sub>(COOH)<sub>2</sub></td>
+                                <td class="formula">CH₂(COOH)₂</td>
                                 <td>solid</td>
                                 <td>-</td>
                                 <td>Manganese dichloride</td>
-                                <td>MnCl<sub>2</sub></td>
+                                <td class="formula">MnCl₂</td>
                                 <td>solid</td>
                                 <td>-</td>
                             </tr>
@@ -445,7 +446,7 @@
                 <div class="page-content" style="text-indent: 0px">
                     <p>
                         <h3>Appendix A: Periodic Table of Elements</h3>
-                        <table style="border: none; line-height: 90%; margin-left: -5%; background-color: white">
+                        <table style="border: none; line-height: 90%; margin-left: -5%">
                             <tr>
                                 <td align="center" style="border-bottom: none"><font size="-2">1</font><br/>H<br/><font size="-2">1.01</font></td>
                                 <td colspan="16" style="border: none"></td>
@@ -596,10 +597,6 @@
                                 <td align="center"><font size="-2">103</font><br/>Lr<br/><font size="-2">266</font></td>
                             </tr>
                         </table>
-                    </p>
-                    <br/><br/>
-                    <p id="round">
-                        <em>1</em>: The rounding method to be used is "away from zero", so _.___5 should always be rounded up.
                     </p>
                     <br/><br/><br/>
                     <p class="flavour-text">

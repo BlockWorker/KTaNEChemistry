@@ -11,9 +11,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 615501dbe4f3fe94fbf4b564abb10237, type: 3}
   m_Name: ModConfig
   m_EditorClassIdentifier: 
-  id: EncryptedMorse
-  title: Encrypted Morse
-  description: Decrypt a morse message in two steps and respond accordingly.
+  id: ChemicalReactions
+  title: Chemical Reactions
+  description: Prepare and start the correct chemical reaction.
   version: 1.0.0
   outputFolder: build
-  previewImage: {fileID: 2800000, guid: 85a13456ffcd056418a32cf141e4ed76, type: 3}
+  previewImage: {fileID: 0}

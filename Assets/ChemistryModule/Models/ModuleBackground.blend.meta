@@ -6,10 +6,19 @@ ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Component_PuzzleBackground
+    100004: ResetButton
     400000: //RootNode
+    400002: Component_PuzzleBackground
+    400004: ResetButton
     2300000: //RootNode
+    2300002: Component_PuzzleBackground
+    2300004: ResetButton
     3300000: //RootNode
+    3300002: Component_PuzzleBackground
+    3300004: ResetButton
     4300000: Component_PuzzleBackground
+    4300002: ResetButton
     7400000: Default Take
     9500000: //RootNode
   materials:
